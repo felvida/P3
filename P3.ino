@@ -1,4 +1,4 @@
-/*  Web Server for PATIO VIANA */
+/*  Web Server for client junio 2015 */
 // Antes de version final > ARREGLAR DEPURA OJO
 // if (num <10) Red('0'); 
 // Red( num ); // '10' '08'
@@ -730,17 +730,17 @@ void loop() {
   segvueltaantes =seg; //vueltamillis
 }
 
-/* Programa para control de un acceso con RFID, Hw que necesitamos lo ves en version P2 */
+/* Programa para control de un acceso con RFID, Hw que necesitamos para version final: tarjeta VBING2015C */
 // version que borra config acceso 'a' al abrir puerta, admite pin de 3,4 o  5 numeros,
 // depuracion en casa, solo con cable usb+rj45, desde serial monitor pega el tag, cambia STX por 'p', use send+ pegar p0107075ed6p
-// version 2015 intentando placa arduino eth, para compilar con IDE arduino-0023
+// version 2015 funciona tambien sobre placa arduino eth, para compilar con IDE ver 1.6.4
 // el string esta incluido en core a partir de version arduino 19
-// esta version compila en arduino 0017, en win7 HP sp1 b32
+// esta version compila en arduino 1.6.4, en win7 HP sp1 b32
 // para Arduino Duemilanove At328, con Ethernet Shield (sin SD) en com 4
-// al compilar da sketch size 16520 bytes (of 30720 max)
+// al compilar da un sketch size 16520 bytes (of 30720 max)
 // ATmega328> Flas Memory 32Kb(-2K bootloader), EEprom(1KB), SRAM (2KB)
 // se puede depurar Duemile con emparedado Ethernet Shield , por puerto USB
-// para volcarlo en ethernet tras click para subir, das boton de reset, da subido 
+// para volcarlo en ethernet necesitas adaptador RS232 TTL, tras click para subir, das boton de reset y lo sube! 
 
 
 
